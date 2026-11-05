@@ -1,4 +1,4 @@
-#include <cmath>
+#include <cstdlib>
 #include <iostream>
 
 void solve(int caseId);
@@ -17,23 +17,27 @@ int main() {
 }
 
 void solve(int caseId) {
-    int n;
+    int oneRow = -1;
+    int oneCol = -1;
 
-    std::cin >> n;
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            int entry;
+            std::cin >> entry;
 
-    int solvableCount = 0;
+            if (entry == 1) {
+                oneRow = i;
+                oneCol = j;
+                break;
+            }
+        }
 
-    for (int i = 0; i < n; i++) {
-        int p, v, t;
-
-        std::cin >> p >> v >> t;
-
-        int totalSolvers = (p + v + t);
-
-        if (totalSolvers > 1) {
-            solvableCount++;
+        if (oneRow != -1) {
+            break;
         }
     }
 
-    std::cout << solvableCount << '\n';
+    int totalSwaps = std::abs(oneRow - 2) + std::abs(oneCol - 2);
+
+    std::cout << totalSwaps << '\n';
 }
