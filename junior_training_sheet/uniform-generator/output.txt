@@ -1,0 +1,22 @@
+         1         5    Good Choice
+
+         1         4    Good Choice
+
+         1         2    Good Choice
+
+         1         3    Good Choice
+
+         2         3    Good Choice
+
+         2         4    Bad Choice
+
+         2         8    Bad Choice
+
+         2        16    Bad Choice
+
+         3         9    Bad Choice
+
+         4         5    Good Choice
+
+         7         3    Good Choice
+
