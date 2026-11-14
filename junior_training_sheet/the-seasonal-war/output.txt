@@ -1,0 +1,4 @@
+Image number 1 contains 2 war eagles.
+Image number 2 contains 1 war eagles.
+Image number 3 contains 1 war eagles.
+Image number 4 contains 0 war eagles.
